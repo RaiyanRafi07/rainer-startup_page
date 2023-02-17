@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
 :root {
-  --background-color: rgb(153, 0, 240);
-  --link-hover: rgb(49, 225, 247);
-  --link-heading: rgb(164, 96, 237);
-  --background-glow: 0px 0px 30px rgb(49, 225, 247);
+  --background-color: rgb(44, 233, 60);
+  --link-hover: rgba(12, 203, 133, 0.791);
+  --link-heading: rgb(32, 255, 192);
+  --background-glow: 0px 0px 50px rgb(100, 251, 125);
 }
 * {
   padding: 0;
@@ -100,7 +100,8 @@ a {
   color: aliceblue;
 }
 form {
-  font-size: 2.5rem;
+  font-size: 1.85rem;
+  font-weight: 700;
   margin-bottom: 0px;
   padding-top: 0px;
   border: none;
@@ -111,7 +112,7 @@ form input {
   border: none;
   background-color: rgba(107, 102, 255, 0);
   color: #aaa;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
 }
 form input:focus {
@@ -131,4 +132,5 @@ form input:focus {
   margin-top: -2rem;
   background-color: var(--background-color);
   box-shadow: var(--background-glow);
+  background: repeating-linear-gradient(rgb(122, 255, 144),rgb(2, 255, 44),rgb(18, 180, 45),rgb(18, 84, 29))
 }

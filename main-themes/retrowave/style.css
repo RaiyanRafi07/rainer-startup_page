@@ -1,9 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
 :root {
-  --background-color: rgb(153, 0, 240);
-  --link-hover: rgb(49, 225, 247);
-  --link-heading: rgb(164, 96, 237);
-  --background-glow: 0px 0px 30px rgb(49, 225, 247);
+  --background-color: #00e77f;
+  --link-hover: hsla(206, 90%, 68%, 1);
+  --link-heading: hsla(206, 90%, 68%, 1);
 }
 * {
   padding: 0;
@@ -104,7 +103,7 @@ form {
   margin-bottom: 0px;
   padding-top: 0px;
   border: none;
-  color: var(--link-heading);
+  color: hsla(206, 90%, 68%, 1);
 }
 
 form input {
@@ -129,6 +128,13 @@ form input:focus {
   width: 700px;
   margin-left: -5rem;
   margin-top: -2rem;
-  background-color: var(--background-color);
-  box-shadow: var(--background-glow);
+  background-color: hsla(335, 100%, 70%, 1);
+background-image:
+radial-gradient(at 40% 0%, hsla(206, 90%, 68%, 1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(52, 91%, 65%, 1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(221, 58%, 51%, 1) 0px, transparent 50%),
+radial-gradient(at 80% 50%, hsla(340,66%,70%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(291, 100%, 57%, 1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(343,61%,60%,1) 0px, transparent 50%);
+  box-shadow: 0px 0px 30px hsla(335, 100%, 70%, 1);
 }

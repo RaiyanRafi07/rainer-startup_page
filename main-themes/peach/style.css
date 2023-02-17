@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
 :root {
-  --background-color: rgb(153, 0, 240);
-  --link-hover: rgb(49, 225, 247);
-  --link-heading: rgb(164, 96, 237);
-  --background-glow: 0px 0px 30px rgb(49, 225, 247);
+  --background-color: rgb(255, 187, 165);
+  --link-hover: rgb(183, 130, 107);
+  --link-heading: rgb(183, 130, 107);
+  --background-glow: 0px 0px 30px rgb(251, 64, 4);
 }
 * {
   padding: 0;

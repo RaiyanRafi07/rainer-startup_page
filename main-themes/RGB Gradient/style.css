@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
 :root {
-  --background-color: rgb(153, 0, 240);
-  --link-hover: rgb(49, 225, 247);
-  --link-heading: rgb(164, 96, 237);
-  --background-glow: 0px 0px 30px rgb(49, 225, 247);
+  --background-color: rgb(253, 129, 57);
+  --link-hover: rgb(255, 5, 172);
+  --link-heading: rgb(1, 225, 255);
+  --background-glow: 0px 0px 30px rgb(253, 134, 182);
 }
 * {
   padding: 0;
@@ -130,5 +130,35 @@ form input:focus {
   margin-left: -5rem;
   margin-top: -2rem;
   background-color: var(--background-color);
+  background: linear-gradient(45deg, #fb0094, #00bfff, #00ff00,#ffff00, #ff0000, #fb0094,
+  #00ffb7, #00f7ff,#ffff00, #ff0000);
+  animation: steam 20s linear infinite;
   box-shadow: var(--background-glow);
+}
+.bg:before, .bg:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #00bfff, #00ff00,#ffff00, #ff0000, #fb0094,
+    #00ffb7, #00f7ff,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+.bg:after{
+	filter: blur(50px);
 }
